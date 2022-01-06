@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ShortURLController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// TODO Update to POST.
+Route::get('/short-url', ShortURLController::class)->name('short-url');
