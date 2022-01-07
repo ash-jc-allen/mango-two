@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ShortURLResource;
 use AshAllenDesign\ShortURL\Facades\ShortURL;
 use Illuminate\Http\Request;
 
@@ -11,15 +12,19 @@ class ShortURLController extends Controller
     /**
      * Generate a short URL and then return its details.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @return ShortURLResource
      */
-    public function __invoke(Request $request)
+    public function __invoke(Request $request): ShortURLResource
     {
-        // TODO Validate input.
-        // TODO Return data in resource.
+        $request->validate([
+            'destination_url' => 'url|required',
+        ]);
 
-        $shortUrl = ShortURL::destinationUrl($request->destination_url)->make();
-        dd($shortUrl);
+        ShortURLResource::withoutWrapping();
+
+        return new ShortURLResource(
+            ShortURL::destinationUrl($request->destination_url)->make()
+        );
     }
 }
