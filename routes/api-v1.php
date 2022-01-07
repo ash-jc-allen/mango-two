@@ -15,5 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// TODO Update to POST.
-Route::get('/short-url', ShortURLController::class)->name('short-url');
+Route::post('/short-url', ShortURLController::class)->name('short-url');
