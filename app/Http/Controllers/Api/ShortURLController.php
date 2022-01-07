@@ -12,7 +12,7 @@ class ShortURLController extends Controller
     /**
      * Generate a short URL and then return its details.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return ShortURLResource
      */
     public function __invoke(Request $request): ShortURLResource
