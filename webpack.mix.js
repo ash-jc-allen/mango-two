@@ -14,4 +14,5 @@ const mix = require('laravel-mix');
 mix.css('resources/css/app.css', 'public/css/app.css', {}, [
         require("tailwindcss"),
     ])
+    .copyDirectory('resources/img', 'public/img')
     .version();

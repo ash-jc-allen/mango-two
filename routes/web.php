@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/', 'https://ashallendesign.co.uk');
+Route::view('/', 'index');
