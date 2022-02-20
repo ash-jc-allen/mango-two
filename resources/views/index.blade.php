@@ -4,16 +4,17 @@
     <link href="/css/app.css" rel="stylesheet">
 </head>
 <body class="bg-dark min-h-screen">
-<header class="pt-6 max-w-7xl mx-auto">
+<header class="pt-6 max-w-7xl mx-auto px-8">
     <img src="/img/mango-two-logo.png" alt="Mango Two logo" class="h-12 text-left">
 </header>
-<main class="mt-14 mb-auto max-w-7xl mx-auto">
+
+<main class="mt-32 mb-auto max-w-7xl mx-auto px-8">
     <h1 class="text-5xl text-white font-extrabold text-center relative">
         Share Your Links<br>
         <span class="bg-clip-text bg-gradient-to-t from-dark-orange to-light-orange text-transparent">Without Any Tracking</span>
     </h1>
 
-    <p class="text-center text-white">
+    <p class="text-center text-white mt-8">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis<br>
         eligendi est nisi nulla qui similique. Corporis perspiciatis, voluptatum.
     </p>
@@ -27,6 +28,54 @@
             <img src="/img/firefox-logo.png" alt="Firefox logo" class="inline w-5 h-5 mr-2 align-middle"> Firefox coming soon...
         </x-home-page-button-link>
     </div>
+
+    <div class="relative py-16 sm:py-24 lg:py-32 mt-32">
+        <div class="mx-auto  px-4 text-center sm:px-6 lg:px-8">
+            <h2 class="text-base font-semibold tracking-wider text-light-orange uppercase">Deploy faster</h2>
+            <p class="mt-2 text-3xl font-extrabold text-gray-50 tracking-tight sm:text-4xl">Everything you need to deploy your app</p>
+            <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
+            <div class="mt-12">
+                <div class="grid gap-8 sm:grid-cols-2 grid-cols-3">
+                    <x-feature title="Privacy First">
+                        <x-slot name="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                        </x-slot>
+                    </x-feature>
+
+                    <x-feature title="Open Source">
+                        <x-slot name="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                        </x-slot>
+                    </x-feature>
+
+                    <x-feature title="Rest API">
+                        <x-slot name="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                        </x-slot>
+                    </x-feature>
+
+                    <x-feature title="Browser Extensions">
+                        <x-slot name="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                        </x-slot>
+                    </x-feature>
+
+                    <x-feature title="Analytics Dashboard">
+                        <x-slot name="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                        </x-slot>
+                    </x-feature>
+
+                    <x-feature title="QR Codes">
+                        <x-slot name="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                        </x-slot>
+                    </x-feature>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </main>
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full text-light-orange bg-dark">
