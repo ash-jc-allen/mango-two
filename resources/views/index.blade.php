@@ -22,8 +22,7 @@
     </h1>
 
     <p class="text-center text-white text-lg mt-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis<br>
-        eligendi est nisi nulla qui similique. Corporis perspiciatis, voluptatum.
+        Mango Two is a privacy-first, open source URL shortener.<br>Add the extension to your browser and get started with sharing links without any click tracking.
     </p>
 
     <div class="mt-14 flex justify-center md:space-x-4 flex-wrap">
@@ -40,43 +39,57 @@
 
     <div class="relative py-16 sm:py-24 lg:py-32 mt-32">
         <div class="mx-auto px-4 text-center sm:px-6 lg:px-8">
-            <p class="mt-2 text-3xl font-extrabold text-gray-200 tracking-tight sm:text-4xl">Everything you need to deploy your app</p>
-            <p class="mt-5 max-w-prose mx-auto text-lg text-gray-200">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
+            <p class="mt-2 text-3xl font-extrabold text-gray-200 tracking-tight sm:text-4xl">Why Use Mango Two?</p>
+            <p class="mt-5 max-w-prose mx-auto text-lg text-gray-200">Here are a few reasons why you might want to use Mango Two...</p>
             <div class="mt-12">
                 <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-                    <x-feature title="Privacy First">
+                    <x-feature title="🕵️‍♂️ Privacy-First">
                         <x-slot name="text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                            We don't track the clicks on any of the links. So, we don't know when your links have been clicked, or who by.
+                            <br><br>
+                            You can be sure that we aren't selling your data to anyone.
                         </x-slot>
                     </x-feature>
 
-                    <x-feature title="Open Source">
+                    <x-feature title="👨‍💻 Open Source">
                         <x-slot name="text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                            The code that we use for creating and handling the short URLs is completely open-source. This means you can see exactly what we're doing with your data.
+                            <br><br>
+                            You can even submit your own features too to improve Mango Two!
                         </x-slot>
                     </x-feature>
 
-                    <x-feature title="Rest API">
+                    <x-feature title="⚡️ Rest API">
                         <x-slot name="text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                            Mango Two is powered by a superfast API. So, you can build your own integrations if you'd like.
+                            <br><br>
+                            The documentation to use the API is coming soon.
+
+                            COMING SOON
                         </x-slot>
                     </x-feature>
 
-                    <x-feature title="Browser Extensions">
+                    <x-feature title="🖥 Browser Extensions">
                         <x-slot name="text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                            You can add Mango Two directly to your web browser and get started in under 30 seconds.
+                            <br><br>
+                            No signups needed!
                         </x-slot>
                     </x-feature>
 
-                    <x-feature title="Analytics Dashboard">
+                    <x-feature title="📈 Analytics Dashboard">
                         <x-slot name="text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                            Enable analytics for your links so that you can see when they're clicked.
+
+                            COMING SOON
                         </x-slot>
                     </x-feature>
 
-                    <x-feature title="QR Codes">
+                    <x-feature title="🚀 QR Codes">
                         <x-slot name="text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quo?
+                            Share your short URLs using QR codes. This gives you the flexibility to either share your links as text or as QR codes that can be scanned.
+
+                            COMING SOON
                         </x-slot>
                     </x-feature>
                 </div>
