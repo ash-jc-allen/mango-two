@@ -2,6 +2,9 @@
 <head>
     <title>Mango Two | Privacy-First, Open Source URL Shortener</title>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -99,11 +102,10 @@
 
 </main>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full text-light-orange bg-dark">
-    <path fill="currentColor" fill-opacity="1" d="M0,128L80,128C160,128,320,128,480,160C640,192,800,256,960,261.3C1120,267,1280,213,1360,186.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-</svg>
-<footer class="text-dark text-center bg-light-orange pb-6 -mt-2">
-    <p>Powered by <a href="https://ashallendesign.co.uk" class="font-extrabold">Ash Allen Design</a> 🚀</p>
+<footer class="text-dark text-center bg-gradient-to-t from-dark-orange to-black/0 py-12">
+    <div class="mt-2">
+        <p>Powered by <a href="https://ashallendesign.co.uk" class="font-extrabold">Ash Allen Design</a> 🚀</p>
+    </div>
 </footer>
 </body>
 </html>
