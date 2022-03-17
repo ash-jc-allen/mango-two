@@ -16,5 +16,5 @@ module.exports = {
         },
     },
     plugins: [],
-    safelist: process.env.NODE_ENV === 'development' ? [{pattern: /.*/}] : [],
-}
+    safelist: process.env.NODE_ENV === 'development' ? [{ pattern: /.*/ }] : [],
+};
