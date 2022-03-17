@@ -4,9 +4,13 @@
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-dark min-h-screen">
+<body class="bg-dark min-h-screen font-sans">
 <header class="pt-6 max-w-7xl mx-auto px-8">
     <img src="/img/mango-two-logo.png" alt="Mango Two logo" class="h-12 text-left">
 </header>
@@ -17,7 +21,7 @@
         <span class="bg-clip-text bg-gradient-to-t from-dark-orange to-light-orange text-transparent">Without Any Tracking</span>
     </h1>
 
-    <p class="text-center text-white mt-8">
+    <p class="text-center text-white text-lg mt-8">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis<br>
         eligendi est nisi nulla qui similique. Corporis perspiciatis, voluptatum.
     </p>
@@ -37,7 +41,7 @@
     <div class="relative py-16 sm:py-24 lg:py-32 mt-32">
         <div class="mx-auto px-4 text-center sm:px-6 lg:px-8">
             <p class="mt-2 text-3xl font-extrabold text-gray-200 tracking-tight sm:text-4xl">Everything you need to deploy your app</p>
-            <p class="mt-5 max-w-prose mx-auto text-xl text-gray-200">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
+            <p class="mt-5 max-w-prose mx-auto text-lg text-gray-200">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
             <div class="mt-12">
                 <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                     <x-feature title="Privacy First">

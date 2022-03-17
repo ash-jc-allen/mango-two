@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
     content: ["./resources/**/*.blade.php"],
     theme: {
@@ -7,7 +9,10 @@ module.exports = {
                 'really-dark': '#18161B',
                 'light-orange': '#FBBF24',
                 'dark-orange': '#F66262'
-            }
+            },
+            fontFamily: {
+                'sans': ['Inter', ...defaultTheme.fontFamily.sans],
+            },
         },
     },
     plugins: [],
