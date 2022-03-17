@@ -23,20 +23,21 @@
     </p>
 
     <div class="mt-14 flex justify-center md:space-x-4 flex-wrap">
-        <x-home-page-button-link href="#">
-            <img src="/img/chrome-logo.png" alt="Firefox logo" class="inline w-5 h-5 mr-2 align-middle"> Chrome coming soon...
+        <x-home-page-button-link href="https://chrome.google.com/webstore/detail/mango-two-url-shortener/edkimicnoiglhlkgeooiijbgikgkhbkd?hl=en">
+            <img src="/img/chrome-logo.png" alt="Firefox logo" class="inline w-5 h-5 mr-2 align-middle"> Download for Chrome
         </x-home-page-button-link>
 
-        <x-home-page-button-link href="#">
-            <img src="/img/firefox-logo.png" alt="Firefox logo" class="inline w-5 h-5 mr-2 align-middle"> Firefox coming soon...
-        </x-home-page-button-link>
+        <div class="opacity-50">
+            <x-home-page-button-link href="#">
+                <img src="/img/firefox-logo.png" alt="Firefox logo" class="inline w-5 h-5 mr-2 align-middle"> Firefox coming soon...
+            </x-home-page-button-link>
+        </div>
     </div>
 
     <div class="relative py-16 sm:py-24 lg:py-32 mt-32">
         <div class="mx-auto px-4 text-center sm:px-6 lg:px-8">
-            <h2 class="text-base font-semibold tracking-wider text-light-orange uppercase">Deploy faster</h2>
-            <p class="mt-2 text-3xl font-extrabold text-gray-50 tracking-tight sm:text-4xl">Everything you need to deploy your app</p>
-            <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
+            <p class="mt-2 text-3xl font-extrabold text-gray-200 tracking-tight sm:text-4xl">Everything you need to deploy your app</p>
+            <p class="mt-5 max-w-prose mx-auto text-xl text-gray-200">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
             <div class="mt-12">
                 <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                     <x-feature title="Privacy First">
