@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-    content: ["./resources/**/*.blade.php"],
+    content: ['./resources/**/*.blade.php'],
     theme: {
         extend: {
             colors: {
@@ -16,5 +16,5 @@ module.exports = {
         },
     },
     plugins: [],
-    safelist: process.env.NODE_ENV === "development" ? [{pattern: /.*/}] : []
+    safelist: process.env.NODE_ENV === 'development' ? [{pattern: /.*/}] : []
 }
