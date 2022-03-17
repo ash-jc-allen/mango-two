@@ -8,8 +8,10 @@
     <div class="flow-root bg-really-dark rounded-lg px-6 pb-8">
         <div class="-mt-6">
             <div>
-                <span class="inline-flex items-center justify-center">
-                    <img src="{{ mix('img/mango.png') }}" class="h-12 w-12" alt="Mango Two icon">
+                <span class="inline-flex items-center justify-center p-3 bg-gradient-to-t from-dark-orange to-light-orange rounded-md shadow-lg h-14 w-14 border-2 border-really-dark">
+                    <span class="text-3xl">
+                        {{ $icon }}
+                    </span>
                 </span>
             </div>
             <h3 class="mt-8 text-xl font-medium text-gray-200 tracking-tight">{{ $title }}</h3>

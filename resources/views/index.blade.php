@@ -43,7 +43,7 @@
             <p class="mt-5 max-w-prose mx-auto text-lg text-gray-200">Here are a few reasons why you might want to use Mango Two...</p>
             <div class="mt-12">
                 <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-                    <x-feature title="🕵️‍♂️ Privacy-First">
+                    <x-feature icon="🕵️‍♂️" title="Privacy-First">
                         <x-slot name="text">
                             We don't track the clicks on any of the links. So, we don't know when your links have been clicked, or who by.
                             <br><br>
@@ -51,7 +51,7 @@
                         </x-slot>
                     </x-feature>
 
-                    <x-feature title="👨‍💻 Open Source">
+                    <x-feature icon="👨‍💻" title="Open Source">
                         <x-slot name="text">
                             The code that we use for creating and handling the short URLs is completely open-source. This means you can see exactly what we're doing with your data.
                             <br><br>
@@ -59,17 +59,17 @@
                         </x-slot>
                     </x-feature>
 
-                    <x-feature title="⚡️ Rest API">
+                    <x-feature icon="⚡️" title="Rest API">
                         <x-slot name="text">
                             Mango Two is powered by a superfast API. So, you can build your own integrations if you'd like.
                             <br><br>
                             The documentation to use the API is coming soon.
 
-                            COMING SOON
+                            <x-coming-soon-badge />
                         </x-slot>
                     </x-feature>
 
-                    <x-feature title="🖥 Browser Extensions">
+                    <x-feature icon="🖥" title="Browser Extensions">
                         <x-slot name="text">
                             You can add Mango Two directly to your web browser and get started in under 30 seconds.
                             <br><br>
@@ -77,19 +77,19 @@
                         </x-slot>
                     </x-feature>
 
-                    <x-feature title="📈 Analytics Dashboard">
+                    <x-feature icon="📈" title="Analytics Dashboard">
                         <x-slot name="text">
                             Enable analytics for your links so that you can see when they're clicked.
 
-                            COMING SOON
+                            <x-coming-soon-badge />
                         </x-slot>
                     </x-feature>
 
-                    <x-feature title="🚀 QR Codes">
+                    <x-feature icon="🚀" title="QR Codes">
                         <x-slot name="text">
                             Share your short URLs using QR codes. This gives you the flexibility to either share your links as text or as QR codes that can be scanned.
 
-                            COMING SOON
+                            <x-coming-soon-badge />
                         </x-slot>
                     </x-feature>
                 </div>
