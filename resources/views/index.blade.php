@@ -102,7 +102,7 @@
 
 </main>
 
-<footer class="text-dark text-center bg-gradient-to-t from-dark-orange to-black/0 py-12">
+<footer class="text-gray-50 text-center bg-really-dark to-black/0 py-6 border-t-light-orange border-t-2">
     <div class="mt-2">
         <p>Powered by <a href="https://ashallendesign.co.uk" class="font-extrabold">Ash Allen Design</a> 🚀</p>
     </div>
