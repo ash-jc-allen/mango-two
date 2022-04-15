@@ -60,7 +60,7 @@ class InvokeTest extends TestCase
             'track_referer_url' => false,
             'track_device_type' => false,
             'activated_at' => now(),
-            'deactivated_at' => null,
+            'deactivated_at' => now()->addDays(2),
         ]);
     }
 
