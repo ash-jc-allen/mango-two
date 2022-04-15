@@ -1,0 +1,51 @@
+name: TestSuite
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+    container:
+      image: kirschbaumdevelopment/laravel-test-runner:8.1
+
+    services:
+      mysql:
+        image: mysql:8
+        env:
+          MYSQL_ROOT_PASSWORD: password
+          MYSQL_DATABASE: test
+        ports:
+          - 33306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
+    steps:
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - name: Get Composer Cache Directory
+        id: composer-cache
+        run: |
+          echo "::set-output name=dir::$(composer config cache-files-dir)"
+      - uses: actions/cache@v1
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-
+      - name: Install composer dependencies
+        run: |
+          composer install --no-scripts
+      - name: Prepare Laravel Application
+        run: |
+          cp .env.ci .env
+          cp .env.ci .env.testing
+          php artisan key:generate
+          npm ci
+          npm run prod
+      - name: Run Testsuite
+        run: vendor/bin/phpunit --testdox --colors=always tests
