@@ -15,11 +15,11 @@ class ShortURLResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id'                   => $this->id,
-            'destination_url'      => $this->destination_url,
-            'url'                  => $this->default_short_url,
+            'id' => $this->id,
+            'destination_url' => $this->destination_url,
+            'url' => $this->default_short_url,
             'redirect_status_code' => $this->redirect_status_code,
-            'created_at'           => $this->created_at,
+            'created_at' => $this->created_at,
         ];
     }
 }
