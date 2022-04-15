@@ -81,7 +81,7 @@ class InvokeTest extends TestCase
             ->assertExactJson([
                 'errors' => [
                     'destination_url' => [
-                        'The destination_url must be a valid URL.'
+                        'The destination_url must be a valid URL.',
                     ],
                 ],
                 'message' => 'The destination_url must be a valid URL.',

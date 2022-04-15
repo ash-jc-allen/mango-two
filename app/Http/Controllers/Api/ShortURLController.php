@@ -13,8 +13,9 @@ class ShortURLController extends Controller
     /**
      * Generate a short URL and then return its details.
      *
-     * @param StoreShortUrlRequest $request
+     * @param  StoreShortUrlRequest  $request
      * @return ShortURLResource
+     *
      * @throws ShortURLException
      */
     public function __invoke(StoreShortUrlRequest $request): ShortURLResource
