@@ -23,7 +23,10 @@ class ShortURLController extends Controller
         ShortURLResource::withoutWrapping();
 
         return new ShortURLResource(
-            app(Builder::class)->destinationUrl($request->destination_url)->make()
+            app(Builder::class)
+                ->destinationUrl($request->destination_url)
+                ->deactivateAt(now()->addDays(2))
+                ->make()
         );
     }
 }
