@@ -26,10 +26,6 @@ class PasswordResetTest extends TestCase
 
     public function test_reset_password_link_can_be_requested()
     {
-        if (! Features::enabled(Features::resetPasswords())) {
-            return $this->markTestSkipped('Password updates are not enabled.');
-        }
-
         Notification::fake();
 
         $user = User::factory()->create();
