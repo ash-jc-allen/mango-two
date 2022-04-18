@@ -1,18 +1,7 @@
 <html lang="en">
-<head>
-    <title>Mango Two | Privacy-First, Open Source URL Shortener</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@include('partials.head')
 
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
-</head>
 <body class="bg-dark min-h-screen font-sans">
 <header class="pt-6 max-w-7xl mx-auto px-8 flex justify-between">
     <img src="/img/mango-two-logo.png" alt="Mango Two logo" class="h-12 text-left">
