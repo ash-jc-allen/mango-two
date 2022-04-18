@@ -21,9 +21,6 @@ module.exports = {
             },
         },
     },
-    plugins: [
-        require('@tailwindcss/forms'),
-        require('@tailwindcss/typography')
-    ],
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
     safelist: process.env.NODE_ENV === 'development' ? [{ pattern: /.*/ }] : [],
 };
