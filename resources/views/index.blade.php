@@ -14,8 +14,22 @@
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
 </head>
 <body class="bg-dark min-h-screen font-sans">
-<header class="pt-6 max-w-7xl mx-auto px-8">
+<header class="pt-6 max-w-7xl mx-auto px-8 flex justify-between">
     <img src="/img/mango-two-logo.png" alt="Mango Two logo" class="h-12 text-left">
+
+    <div>
+        <div class="bg-gradient-to-t from-dark-orange to-light-orange p-0.5 rounded mt-4 inline-block mx-1">
+            <a href="{{ route('login') }}" class="inline-block bg-really-dark text-white py-2 px-4 rounded">
+                Sign In
+            </a>
+        </div>
+
+        <div class="bg-gradient-to-t from-dark-orange to-light-orange p-0.5 rounded mt-4 inline-block mx-1">
+            <a href="{{ route('register') }}" class="inline-block bg-really-dark text-white py-2 px-4 rounded">
+                Register
+            </a>
+        </div>
+    </div>
 </header>
 
 <main class="mt-32 mb-auto max-w-7xl mx-auto px-8">
