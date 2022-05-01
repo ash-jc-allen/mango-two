@@ -22,6 +22,12 @@
             <main>
                 {{ $slot }}
             </main>
+
+            <div class="bottom-0">
+                <p class="text-gray-500 dark:text-gray-30 text-right max-w-7xl text-xs">
+                    🚀 Ash Allen Design
+                </p>
+            </div>
         </div>
 
         @stack('modals')
