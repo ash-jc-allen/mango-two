@@ -12,6 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+
+    @production
+        <!-- Fathom - beautiful, simple website analytics -->
+        <script src="https://cdn.usefathom.com/script.js" data-site="DZIIAJKY" defer></script>
+        <!-- / Fathom -->
+    @endproduction
 </head>
 <body class="bg-dark min-h-screen font-sans">
 <header class="pt-6 max-w-7xl mx-auto px-8">
