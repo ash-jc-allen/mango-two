@@ -111,6 +111,10 @@
 <footer class="text-gray-50 text-center bg-really-dark to-black/0 py-6 border-t-light-orange border-t-2">
     <div class="mt-2">
         <p>Powered by <a href="https://ashallendesign.co.uk" class="font-extrabold">Ash Allen Design</a> 🚀</p>
+        <div class="space-x-4 mt-2">
+            <p class="block md:inline mt-2 md:mt-0">Analytics by <a href="https://usefathom.com/ref/IYEWUV" class="font-extrabold">Fathom Analytics</a> ⚡</p>
+            <p class="block md:inline mt-2 md:mt-0">Hosted using <a href="https://www.digitalocean.com/?refcode=7d06055e9d46&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" class="font-extrabold">Digital Ocean</a> 💻</p>
+        </div>
     </div>
 </footer>
 </body>
